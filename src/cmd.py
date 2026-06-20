@@ -1,9 +1,6 @@
 import math
+from Qt.QtCore import QTimer
 import time
-try:
-    from PyQt6.QtCore import QTimer
-except ImportError:
-    from PyQt5.QtCore import QTimer
 
 from chimerax.core.commands import CmdDesc
 from chimerax.geometry import Place
