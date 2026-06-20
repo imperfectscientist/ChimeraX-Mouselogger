@@ -1,11 +1,12 @@
-from chimerax.core.commands import CmdDesc
 import math
-
 import time
 try:
     from PyQt6.QtCore import QTimer
 except ImportError:
     from PyQt5.QtCore import QTimer
+
+from chimerax.core.commands import CmdDesc
+from chimerax.geometry import Place
 
 class MouseTracker:
     def __init__(self, session):
