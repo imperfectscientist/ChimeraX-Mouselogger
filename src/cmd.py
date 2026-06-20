@@ -125,6 +125,14 @@ class MouseTracker:
             end_cam_place = self.session.main_view.camera.position
             delta = end_cam_place * self.start_camera_pos.inverse()
             
+            # If models are selected, append them to the command so the user can apply the scene rotation to just those models
+            model_suffix = ""
+            if hasattr(self.session, 'selection'):
+                sel_models = list(self.session.selection.models())
+                if sel_models:
+                    model_ids = ",".join([f"#{m.id_string}" for m in sel_models])
+                    model_suffix = f" models {model_ids}"
+            
             try:
                 if callable(getattr(delta, 'rotation_axis_and_angle', None)):
                     axis, rot = delta.rotation_axis_and_angle()
@@ -132,7 +140,7 @@ class MouseTracker:
                     if abs(angle_deg) > 0.1:
                         # Camera movement is inverse of scene movement
                         axis_str = f"{-axis[0]:.3f},{-axis[1]:.3f},{-axis[2]:.3f}"
-                        commands_to_log.append(f'<b><a title="Help for \'turn\' command" href="help:user/commands/turn.html">turn</a></b> {axis_str} {angle_deg:.1f}')
+                        commands_to_log.append(f'<b><a title="Help for \'turn\' command" href="help:user/commands/turn.html">turn</a></b> {axis_str} {angle_deg:.1f}{model_suffix}')
                         
                 if callable(getattr(delta, 'translation', None)):
                     trans = delta.translation()
@@ -141,7 +149,7 @@ class MouseTracker:
                         # Camera translation is inverse of scene translation
                         trans_axis = [-x/dist for x in trans]
                         axis_str = f"{trans_axis[0]:.3f},{trans_axis[1]:.3f},{trans_axis[2]:.3f}"
-                        commands_to_log.append(f'<b><a title="Help for \'move\' command" href="help:user/commands/move.html">move</a></b> {axis_str} {dist:.2f}')
+                        commands_to_log.append(f'<b><a title="Help for \'move\' command" href="help:user/commands/move.html">move</a></b> {axis_str} {dist:.2f}{model_suffix}')
             except Exception:
                 pass
 
