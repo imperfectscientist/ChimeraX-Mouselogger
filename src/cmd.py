@@ -130,8 +130,8 @@ class MouseTracker:
             if hasattr(self.session, 'selection'):
                 sel_models = list(self.session.selection.models())
                 if sel_models:
-                    model_ids = ",".join([f"#{m.id_string}" for m in sel_models])
-                    model_suffix = f" models {model_ids}"
+                    model_ids = ",".join([m.id_string for m in sel_models])
+                    model_suffix = f" models #{model_ids}"
             
             try:
                 if callable(getattr(delta, 'rotation_axis_and_angle', None)):
