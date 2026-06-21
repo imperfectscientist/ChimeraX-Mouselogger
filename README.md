@@ -63,6 +63,8 @@ move -0.000,0.707,-0.707 10.00 models #1
 
 You can copy and paste these exact lines directly into scripts or your command line to flawlessly reproduce your interaction!
 
+> **Note on Movement Tracking:** All generated `turn` and `move` commands are **relative** to the position the object was in right before you clicked and dragged the mouse (not absolute `0,0,0`). This means the commands are perfectly chainable—pasting multiple commands into a script will execute them sequentially, with each movement starting exactly where the previous one left off!
+
 ### Understanding the Output
 
 #### The `turn` command (Rotation)
