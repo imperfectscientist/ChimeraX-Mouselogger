@@ -176,7 +176,18 @@ def handle_mouselogger(session, action):
             session.logger.warning("Mouse logger is already running.")
             return
         _tracker_instance = MouseTracker(session)
-        session.logger.info("3D Mouse tracking started. Run 'mouselogger stop' to stop.")
+        
+        help_html = """
+        <b>3D Mouse tracking started!</b> Run 'mouselogger stop' to stop.<br>
+        <br>
+        <u>Output Guide:</u><br>
+        <b>turn &lt;axis_x,axis_y,axis_z&gt; &lt;angle_degrees&gt; [models]</b><br>
+        <i>Example: turn 1.000,0.000,0.000 45.0</i> (Rotates 45 degrees around the X-axis)<br>
+        <br>
+        <b>move &lt;dir_x,dir_y,dir_z&gt; &lt;distance_angstroms&gt; [models]</b><br>
+        <i>Example: move 0.000,1.000,0.000 10.0</i> (Slides 10 Angstroms Upwards)<br>
+        """
+        session.logger.info(help_html.strip(), is_html=True)
     elif action == "stop":
         if _tracker_instance is None:
             session.logger.warning("Mouse logger is not running.")

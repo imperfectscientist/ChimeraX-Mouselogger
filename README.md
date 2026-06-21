@@ -63,6 +63,28 @@ move -0.000,0.707,-0.707 10.00 models #1
 
 You can copy and paste these exact lines directly into scripts or your command line to flawlessly reproduce your interaction!
 
+### Understanding the Output
+
+#### The `turn` command (Rotation)
+**Syntax:** `turn <axis> <angle> [models]`
+
+* **`<axis>` (e.g., `1.000,0.000,0.000`)**: The 3D direction vector `(X, Y, Z)` that you are rotating *around*. 
+  * `1,0,0` means rotating around the horizontal X-axis (nodding up/down).
+  * `0,1,0` means rotating around the vertical Y-axis (spinning left/right).
+  * `0,0,1` means rotating around the depth Z-axis (rolling like a steering wheel).
+* **`<angle>` (e.g., `45.0`)**: The amount of rotation that occurred around the axis, measured in **degrees**.
+* **`[models]` (e.g., `models #1`)**: *(Optional)* Appears if the rotation is restricted to specific selected models rather than the whole screen.
+
+#### The `move` command (Translation)
+**Syntax:** `move <axis> <distance> [models]`
+
+* **`<axis>` (e.g., `0.000,1.000,0.000`)**: The 3D vector `(X, Y, Z)` that points in the direction the object is sliding. 
+  * `1,0,0` means it slid to the Right.
+  * `0,1,0` means it slid Upwards.
+  * `0,0,1` means it slid Towards you.
+* **`<distance>` (e.g., `10.00`)**: The physical distance the object traveled, measured in **Ångströms** (Å).
+* **`[models]` (e.g., `models #1`)**: *(Optional)* Appears if the movement is restricted to specific selected models rather than the whole screen.
+
 ## Troubleshooting
 
 - **"Unknown command: mouselogger start"**: Ensure the plugin is installed correctly. You can check installed plugins by clicking `Tools -> More Tools -> Tool Shed` or via `toolshed list`.
