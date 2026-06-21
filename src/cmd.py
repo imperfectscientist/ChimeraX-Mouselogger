@@ -186,6 +186,8 @@ def handle_mouselogger(session, action):
         <br>
         <b>move &lt;dir_x,dir_y,dir_z&gt; &lt;distance_angstroms&gt; [models]</b><br>
         <i>Example: move 0.000,1.000,0.000 10.0</i> (Slides 10 Angstroms Upwards)<br>
+        <br>
+        <b>Note:</b> All generated commands are <b>relative</b> to their previous position (not absolute 0,0,0), making them perfectly chainable!
         """
         session.logger.info(help_html.strip(), is_html=True)
     elif action == "stop":
