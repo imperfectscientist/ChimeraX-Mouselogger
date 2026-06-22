@@ -18,7 +18,7 @@ If you received the `chimerax_mouselogger-*.whl` package, you can install it dir
 1. Open ChimeraX.
 2. In the ChimeraX command line, run the following command (update the path to where your file is located):
    ```text
-   toolshed install /path/to/downloads/chimerax_mouselogger-0.10-py3-none-any.whl
+   toolshed install /path/to/downloads/chimerax_mouselogger-0.xx-py3-none-any.whl
    ```
 
 ### For Developers
