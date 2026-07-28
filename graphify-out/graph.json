@@ -9,9 +9,10 @@
       "source_file": "src/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_init",
       "community": 2,
-      "norm_label": "__init__.py"
+      "norm_label": "__init__.py",
+      "id": "src_init",
+      "community_name": "cmd.py"
     },
     {
       "label": "_MyAPI",
@@ -19,9 +20,10 @@
       "source_file": "src/__init__.py",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "src_init_myapi",
       "community": 1,
-      "norm_label": "_myapi"
+      "norm_label": "_myapi",
+      "id": "src_init_myapi",
+      "community_name": "_MyAPI"
     },
     {
       "label": "BundleAPI",
@@ -29,9 +31,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "bundleapi",
       "community": 1,
-      "norm_label": "bundleapi"
+      "norm_label": "bundleapi",
+      "id": "bundleapi",
+      "community_name": "_MyAPI"
     },
     {
       "label": ".initialize()",
@@ -39,9 +42,10 @@
       "source_file": "src/__init__.py",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "src_init_myapi_initialize",
       "community": 1,
-      "norm_label": ".initialize()"
+      "norm_label": ".initialize()",
+      "id": "src_init_myapi_initialize",
+      "community_name": "_MyAPI"
     },
     {
       "label": ".register_command()",
@@ -49,9 +53,10 @@
       "source_file": "src/__init__.py",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "src_init_myapi_register_command",
       "community": 1,
-      "norm_label": ".register_command()"
+      "norm_label": ".register_command()",
+      "id": "src_init_myapi_register_command",
+      "community_name": "_MyAPI"
     },
     {
       "label": "cmd.py",
@@ -59,9 +64,10 @@
       "source_file": "src/cmd.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_cmd",
       "community": 2,
-      "norm_label": "cmd.py"
+      "norm_label": "cmd.py",
+      "id": "src_cmd",
+      "community_name": "cmd.py"
     },
     {
       "label": "MouseTracker",
@@ -69,9 +75,10 @@
       "source_file": "src/cmd.py",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "src_cmd_mousetracker",
       "community": 0,
-      "norm_label": "mousetracker"
+      "norm_label": "mousetracker",
+      "id": "src_cmd_mousetracker",
+      "community_name": "MouseTracker"
     },
     {
       "label": ".__init__()",
@@ -79,9 +86,10 @@
       "source_file": "src/cmd.py",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "src_cmd_mousetracker_init",
       "community": 0,
-      "norm_label": ".__init__()"
+      "norm_label": ".__init__()",
+      "id": "src_cmd_mousetracker_init",
+      "community_name": "MouseTracker"
     },
     {
       "label": "._save_state()",
@@ -89,9 +97,10 @@
       "source_file": "src/cmd.py",
       "source_location": "L32",
       "_origin": "ast",
-      "id": "src_cmd_mousetracker_save_state",
       "community": 0,
-      "norm_label": "._save_state()"
+      "norm_label": "._save_state()",
+      "id": "src_cmd_mousetracker_save_state",
+      "community_name": "MouseTracker"
     },
     {
       "label": "._has_moved()",
@@ -99,9 +108,10 @@
       "source_file": "src/cmd.py",
       "source_location": "L43",
       "_origin": "ast",
-      "id": "src_cmd_mousetracker_has_moved",
       "community": 0,
-      "norm_label": "._has_moved()"
+      "norm_label": "._has_moved()",
+      "id": "src_cmd_mousetracker_has_moved",
+      "community_name": "MouseTracker"
     },
     {
       "label": "._poll_positions()",
@@ -109,9 +119,10 @@
       "source_file": "src/cmd.py",
       "source_location": "L79",
       "_origin": "ast",
-      "id": "src_cmd_mousetracker_poll_positions",
       "community": 0,
-      "norm_label": "._poll_positions()"
+      "norm_label": "._poll_positions()",
+      "id": "src_cmd_mousetracker_poll_positions",
+      "community_name": "MouseTracker"
     },
     {
       "label": "._calculate_and_log()",
@@ -119,9 +130,10 @@
       "source_file": "src/cmd.py",
       "source_location": "L96",
       "_origin": "ast",
-      "id": "src_cmd_mousetracker_calculate_and_log",
       "community": 0,
-      "norm_label": "._calculate_and_log()"
+      "norm_label": "._calculate_and_log()",
+      "id": "src_cmd_mousetracker_calculate_and_log",
+      "community_name": "MouseTracker"
     },
     {
       "label": ".destroy()",
@@ -129,9 +141,10 @@
       "source_file": "src/cmd.py",
       "source_location": "L165",
       "_origin": "ast",
-      "id": "src_cmd_mousetracker_destroy",
       "community": 2,
-      "norm_label": ".destroy()"
+      "norm_label": ".destroy()",
+      "id": "src_cmd_mousetracker_destroy",
+      "community_name": "cmd.py"
     },
     {
       "label": "handle_mouselogger()",
@@ -139,9 +152,10 @@
       "source_file": "src/cmd.py",
       "source_location": "L172",
       "_origin": "ast",
-      "id": "src_cmd_handle_mouselogger",
       "community": 2,
-      "norm_label": "handle_mouselogger()"
+      "norm_label": "handle_mouselogger()",
+      "id": "src_cmd_handle_mouselogger",
+      "community_name": "cmd.py"
     }
   ],
   "links": [
@@ -153,9 +167,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_init",
-      "target": "src_cmd",
-      "confidence_score": 1.0
+      "target": "src_cmd"
     },
     {
       "relation": "contains",
@@ -164,9 +178,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_init",
-      "target": "src_init_myapi",
-      "confidence_score": 1.0
+      "target": "src_init_myapi"
     },
     {
       "relation": "inherits",
@@ -175,9 +189,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_init_myapi",
-      "target": "bundleapi",
-      "confidence_score": 1.0
+      "target": "bundleapi"
     },
     {
       "relation": "method",
@@ -186,9 +200,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_init_myapi",
-      "target": "src_init_myapi_initialize",
-      "confidence_score": 1.0
+      "target": "src_init_myapi_initialize"
     },
     {
       "relation": "method",
@@ -197,9 +211,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_init_myapi",
-      "target": "src_init_myapi_register_command",
-      "confidence_score": 1.0
+      "target": "src_init_myapi_register_command"
     },
     {
       "relation": "contains",
@@ -208,9 +222,9 @@
       "source_location": "L172",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd",
-      "target": "src_cmd_handle_mouselogger",
-      "confidence_score": 1.0
+      "target": "src_cmd_handle_mouselogger"
     },
     {
       "relation": "contains",
@@ -219,9 +233,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd",
-      "target": "src_cmd_mousetracker",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker"
     },
     {
       "relation": "calls",
@@ -231,9 +245,9 @@
       "source_location": "L178",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_handle_mouselogger",
-      "target": "src_cmd_mousetracker",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker"
     },
     {
       "relation": "method",
@@ -242,9 +256,9 @@
       "source_location": "L96",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_mousetracker",
-      "target": "src_cmd_mousetracker_calculate_and_log",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_calculate_and_log"
     },
     {
       "relation": "method",
@@ -253,9 +267,9 @@
       "source_location": "L165",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_mousetracker",
-      "target": "src_cmd_mousetracker_destroy",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_destroy"
     },
     {
       "relation": "method",
@@ -264,9 +278,9 @@
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_mousetracker",
-      "target": "src_cmd_mousetracker_has_moved",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_has_moved"
     },
     {
       "relation": "method",
@@ -275,9 +289,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_mousetracker",
-      "target": "src_cmd_mousetracker_init",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_init"
     },
     {
       "relation": "method",
@@ -286,9 +300,9 @@
       "source_location": "L79",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_mousetracker",
-      "target": "src_cmd_mousetracker_poll_positions",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_poll_positions"
     },
     {
       "relation": "method",
@@ -297,9 +311,9 @@
       "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_mousetracker",
-      "target": "src_cmd_mousetracker_save_state",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_save_state"
     },
     {
       "relation": "calls",
@@ -309,9 +323,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_mousetracker_init",
-      "target": "src_cmd_mousetracker_save_state",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_save_state"
     },
     {
       "relation": "calls",
@@ -321,9 +335,9 @@
       "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_mousetracker_poll_positions",
-      "target": "src_cmd_mousetracker_save_state",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_save_state"
     },
     {
       "relation": "calls",
@@ -333,9 +347,9 @@
       "source_location": "L80",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_mousetracker_poll_positions",
-      "target": "src_cmd_mousetracker_has_moved",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_has_moved"
     },
     {
       "relation": "calls",
@@ -345,9 +359,9 @@
       "source_location": "L94",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_mousetracker_poll_positions",
-      "target": "src_cmd_mousetracker_calculate_and_log",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_calculate_and_log"
     },
     {
       "relation": "calls",
@@ -357,11 +371,11 @@
       "source_location": "L197",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_cmd_handle_mouselogger",
-      "target": "src_cmd_mousetracker_destroy",
-      "confidence_score": 1.0
+      "target": "src_cmd_mousetracker_destroy"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "954add159f1b69dbe0ba11992d03dd843d54da56"
+  "built_at_commit": "c7d5f8f7eb49daabb5943bbcde6021661a8dbf45"
 }
