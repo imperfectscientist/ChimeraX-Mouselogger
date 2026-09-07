@@ -1,0 +1,26 @@
+<!-- converted from bundle_info.xml via MarkItDown -->
+
+<BundleInfo name="ChimeraX-MouseLogger"
+            version="0.18"
+            package="chimerax.mouselogger"
+            minSessionVersion="1"
+            maxSessionVersion="1">
+  <Author>Antigravity</Author>
+  <Email>antigravity@gemini.com</Email>
+  <URL>https://github.com/gemini/chimerax-mouselogger</URL>
+  <Synopsis>Logs every mouse movement</Synopsis>
+  <Description>
+    Installs a Qt event filter globally to log every mouse movement.
+  </Description>
+  <Categories>
+    <Category name="Utilities"/>
+  </Categories>
+  <Dependencies>
+    <Dependency name="ChimeraX-Core"/>
+  </Dependencies>
+  <Classifiers>
+    <PythonClassifier>Development Status :: 3 - Alpha</PythonClassifier>
+    <PythonClassifier>Framework :: ChimeraX :: Bundle</PythonClassifier>
+    <ChimeraXClassifier>Command :: mouselogger :: Utilities :: Log 3D mouse rotations and translations</ChimeraXClassifier>
+  </Classifiers>
+</BundleInfo>
