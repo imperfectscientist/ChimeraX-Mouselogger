@@ -1,0 +1,63 @@
+{
+  "communities": {
+    "0": [
+      "src_cmd_mousetracker",
+      "src_cmd_mousetracker_calculate_and_log",
+      "src_cmd_mousetracker_has_moved",
+      "src_cmd_mousetracker_init",
+      "src_cmd_mousetracker_poll_positions",
+      "src_cmd_mousetracker_save_state"
+    ],
+    "1": [
+      "bundleapi",
+      "src_init_myapi",
+      "src_init_myapi_initialize",
+      "src_init_myapi_register_command"
+    ],
+    "2": [
+      "src_cmd",
+      "src_cmd_handle_mouselogger",
+      "src_cmd_mousetracker_destroy",
+      "src_init"
+    ]
+  },
+  "cohesion": {
+    "0": 0.6,
+    "1": 0.5,
+    "2": 0.5
+  },
+  "gods": [
+    {
+      "id": "src_cmd_mousetracker",
+      "label": "MouseTracker",
+      "degree": 8
+    },
+    {
+      "id": "src_init_myapi",
+      "label": "_MyAPI",
+      "degree": 4
+    },
+    {
+      "id": "src_cmd_handle_mouselogger",
+      "label": "handle_mouselogger()",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "handle_mouselogger()",
+      "target": "MouseTracker",
+      "source_files": [
+        "src/cmd.py",
+        "src/cmd.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "note": "Bridges community 0 \u2192 community 2"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
